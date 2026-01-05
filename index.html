@@ -3,11 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kanban borad</title>
+    <title>kanban board</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main>
+        <nav>
+            <div class="right">kanban</div>
 
+            <div class="left">
+                <button id="add-btn">Add new Task</button>
+            </div>
+        </nav>
+        <section class="borad">
+            <div id="todo" class="task-column">
+                <div class="heading">
+                    <div class="t-left">to do</div>
+                    <div class="lift">count</div>
+                </div>
+                <div class="task" draggable="true">
+                    <h2>task</h2>
+                    <p>description</p>
+                    <button>Delete</button>
+                </div>
+            </div>
+            <div id="progress" class="task-column">
+                <div class="heading">
+                    <div class="t-right">in progress</div>
+                <div class="lift">count</div>
+                </div>
+            </div>
+            <div id="done" class="task-column ">
+                <div class="heading">
+                    <div class="t-right">done</div>
+                    <div class="lift">count</div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
