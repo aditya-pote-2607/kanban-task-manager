@@ -81,7 +81,6 @@ nav{
     gap: var(--gap-xxl);
     justify-content: space-between;
     padding: var(--padding-l);
-    transition: all 0.7s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 .borad .task-column{
     background-color: var(--secondry-bg-color);
@@ -90,11 +89,12 @@ nav{
     padding: var(--padding-m);
     display: flex;
     flex-direction: column;
+    transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 .borad .hover-over{
     background-color: var(--bg-color);
     border: 2px dashed var(--text-color);
-    scale: 1.05;
+    scale: 1.03;
 }
 .heading{
     display: flex;
