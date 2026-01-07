@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+    <main >
         <nav>
             <div class="right">kanban</div>
 
@@ -41,6 +41,15 @@
             </div>
         </section>
     </main>
+    <div class="modal show">
+        <div class="over-bg"></div>
+        <div class="modal-content">
+            <input type="text" id="task-title" placeholder="Task Title">
+            <textarea id="task-desc" placeholder="Task Description"></textarea>
+            <button id="save-task-btn">Save Task</button>
+            <button id="close-modal-btn">+</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

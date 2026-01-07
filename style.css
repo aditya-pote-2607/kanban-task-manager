@@ -25,6 +25,7 @@ html, body{
     /* TEXT COLOUR  */
     --text-color: #ffffff;
     --secondry-text-color: #b0adad;
+    --trid--color: #000000;
 
     /* BORDER RADIDUS */
     --border-radius-s: 8px;
@@ -36,6 +37,8 @@ html, body{
     --padding-s: 8px;
     --padding-m: 12px;
     --padding-l: 16px;
+    --padding-xl: 24px;
+    --padding-xxl: 32px;
 
     /* FONT SIZE */
     --font-size-xs: 12px;
@@ -125,3 +128,67 @@ nav{
     border-radius: var(--border-radius-s);
     cursor: pointer;
 }
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.show{
+    display: flex;
+}
+.modal .modal-content{
+    position: relative;
+    background-color: var(--secondry-bg-color);
+    padding: var(--padding-xxl);
+    border-radius: var(--border-radius-m);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-m);
+    z-index: 10;
+}
+
+.modal-content input,
+.modal-content textarea{
+    width: 300px;
+    padding: var(--padding-s);
+    border: none;
+    border-radius: var(--border-radius-s);
+    font-size: var(--font-size-m);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    resize: none;
+}
+.modal-content button{
+    padding: var(--padding-s);
+    font-size: var(--font-size-m);
+    background-color: lightgreen;
+    color: var(--trid-color);
+    border: none;
+    border-radius: var(--border-radius-s);
+    cursor: pointer;
+}
+.modal .over-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    backdrop-filter: blur(4px);
+}
+.modal-content #close-modal-btn{
+position: absolute;
+    font-size: 1.5rem;
+    background-color: transparent;
+    transform: rotate(45deg);
+    top: -4px;
+    right: 7px;
+    color: red;
+}   
